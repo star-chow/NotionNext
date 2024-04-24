@@ -23,9 +23,9 @@ const BLOG = {
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的干饭人🍚', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Azan', // 您的昵称 例如 tangly1024
+  BIO: process.env.NEXT_PUBLIC_BIO || '一个在路上的博客', // 作者简介
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://azzzdaily.com', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
@@ -131,7 +131,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU || true, // 自定义右键菜单，覆盖系统菜单
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_THEME_SWITCH:
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU_THEME_SWITCH ||
-    true, // 是否显示切换主题
+    false, // 是否显示切换主题
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_DARK_MODE:
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU_DARK_MODE || true, // 是否显示深色模式
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_SHARE_LINK:
@@ -215,7 +215,7 @@ const BLOG = {
   POST_PREVIEW_LINES: process.env.NEXT_PUBLIC_POST_POST_PREVIEW_LINES || 12, // 预览博客行数
   POST_RECOMMEND_COUNT: process.env.NEXT_PUBLIC_POST_RECOMMEND_COUNT || 6, // 推荐文章数量
   POSTS_PER_PAGE: process.env.NEXT_PUBLIC_POST_PER_PAGE || 12, // post counts per page
-  POSTS_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'notion', // 排序方式 'date'按时间,'notion'由notion控制
+  POSTS_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'date', // 排序方式 'date'按时间,'notion'由notion控制
 
   POST_WAITING_TIME_FOR_404:
     process.env.NEXT_PUBLIC_POST_WAITING_TIME_FOR_404 || '8', // 文章加载超时时间，单位秒；超时后跳转到404页面
